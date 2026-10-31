@@ -219,7 +219,7 @@ document.addEventListener("keydown", async function(e) {
             const result = await response.json();
 
             if (result.success) {
-                window.location.href = "login.html";
+                window.location.href = "index.html";
             }
 
         } catch (error) {
