@@ -193,15 +193,30 @@ const firebaseConfig = {
 
 let sec = "";
 
-document.addEventListener("keydown", function(e){
+document.addEventListener("keydown", async function(e) {
+    sec += e.key;
 
-    sec += e.key.toLowerCase();
-    if(sec.includes("getElementById")){
-        location.href = "login.html";
-    }
+    if (sec.length >= 14) {
+        const trigger = sec.slice(-14);
+        sec = "";
 
-    if(sec.includes("terminate")){
-        logout();
+        try {
+            const response = await fetch("/api/verify-trigger", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ trigger })
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                window.location.href = "login.html";
+            }
+        } catch (error) {
+            console.error("Trigger verification failed:", error);
+        }
     }
 });
 
