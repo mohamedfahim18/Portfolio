@@ -195,17 +195,12 @@ let sec = "";
 
 document.addEventListener("keydown", async function(e) {
 
-    // Ignore Shift, Ctrl, Alt and other non-character keys
     if (e.key.length !== 1) return;
 
     sec += e.key;
 
-    if (sec.length >= 14) {
-
-        const trigger = sec.slice(-14);
+    if (sec.endsWith("getElementById")) {
         sec = "";
-
-        if (trigger !== "getElementById") return;
 
         try {
             const response = await fetch("/api/verify-trigger", {
@@ -213,18 +208,29 @@ document.addEventListener("keydown", async function(e) {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ trigger })
+                body: JSON.stringify({
+                    trigger: "getElementById"
+                })
             });
 
             const result = await response.json();
 
             if (result.success) {
-                window.location.href = "index.html";
+                window.location.href = "login.html";
             }
 
         } catch (error) {
-            console.error("Trigger verification failed:", error);
+            console.error(error);
         }
+    }
+
+    if (sec.endsWith("terminate")) {
+        sec = "";
+        logout();
+    }
+
+    if (sec.length > 30) {
+        sec = sec.slice(-20);
     }
 });
 
