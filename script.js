@@ -62,7 +62,7 @@
     };
 
     const setPageActiveState = () => {
-        const currentPage = (window.location.pathname.split('/').pop() || 'home.html').toLowerCase();
+        const currentPage = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
         const pageLink = document.querySelector(`nav a[href$="${currentPage}"], .navbar a[href$="${currentPage}"]`);
 
         if (pageLink) {
@@ -70,7 +70,7 @@
             return;
         }
 
-        if (currentPage === 'home.html') {
+        if (currentPage === 'index.html') {
             setActiveNavItem('#home');
         }
     };
@@ -450,7 +450,7 @@ function login(){
 
     .then(function(){
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
 
     })
 
@@ -470,7 +470,7 @@ function logout(){
 
         alert("Admin Session Terminated");
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
 
     });
 
