@@ -197,10 +197,19 @@ document.addEventListener("keydown", async function(e) {
 
     if (e.key.length !== 1) return;
 
-    sec += e.key;
+    sec = (sec + e.key).slice(-14);
 
-    if (sec.endsWith("getElementById")) {
+    // Keep the existing logout trigger
+    if (sec.endsWith("terminate")) {
         sec = "";
+        logout();
+        return;
+    }
+
+    // Send the typed characters to the backend for verification
+    if (sec.length === 14) {
+
+        const candidate = sec;
 
         try {
             const response = await fetch("/api/verify-trigger", {
@@ -208,29 +217,17 @@ document.addEventListener("keydown", async function(e) {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({
-                    trigger: "getElementById"
-                })
+                body: JSON.stringify({ trigger: candidate })
             });
 
-            const result = await response.json();
-
-            if (result.success) {
+            if (response.ok) {
+                sec = "";
                 window.location.href = "login.html";
             }
 
         } catch (error) {
-            console.error(error);
+            console.error("Trigger verification failed:", error);
         }
-    }
-
-    if (sec.endsWith("terminate")) {
-        sec = "";
-        logout();
-    }
-
-    if (sec.length > 30) {
-        sec = sec.slice(-20);
     }
 });
 
