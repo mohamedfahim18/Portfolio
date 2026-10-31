@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#030309;
+            font-family:'Orbitron', sans-serif;
+        }
+
+        .login-container{
+            width:400px;
+            padding:40px;
+            background:rgba(0,191,255,0.04);
+            border:1px solid rgba(0,191,255,0.25);
+            border-radius:20px;
+            backdrop-filter:blur(5px);
+            box-shadow:0 0 8px rgba(0,191,255,0.12);
+            text-align:center;
+        }
+
+        .login-container h1{
+            color:#7DF9FF;
+            letter-spacing:4px;
+            margin-bottom:10px;
+            text-shadow:0 0 10px rgba(0,191,255,0.5);
+        }
+
+        .subtitle{
+            color:rgba(125,249,255,0.7);
+            font-size:12px;
+            letter-spacing:2px;
+            margin-bottom:30px;
+        }
+
+        .login-container input{
+            width:90%;
+            padding:12px;
+            margin:12px 0;
+            border:1px solid rgba(0,191,255,0.3);
+            border-radius:10px;
+            background:rgba(0,191,255,0.04);
+            color:white;
+            outline:none;
+        }
+
+        .login-container input::placeholder{
+            color:rgba(255,255,255,0.5);
+        }
+
+        .login-btn{
+            width:100%;
+            padding:14px;
+            margin-top:20px;
+            border:none;
+            border-radius:10px;
+            background:rgba(0,191,255,0.08);
+            color:#7DF9FF;
+            font-weight:bold;
+            letter-spacing:2px;
+            cursor:pointer;
+            transition:0.3s;
+            box-shadow:0 0 8px rgba(0,191,255,0.15), inset 0 0 8px rgba(0,191,255,0.05);
+        }
+
+        .login-btn:hover{
+            transform:translateY(-2px);
+            background:rgba(0,191,255,0.15);
+            box-shadow:0 0 15px rgba(0,191,255,0.3);
+            color:white;
+        }
+    </style>
+    <div class="login-container">
+
+        <h1>PORTFOLIO ACCESS</h1>
+
+        <p class="subtitle">AUTHORIZED PERSONNEL ONLY</p>
+
+        <input id="username" type="text" placeholder="Username">
+
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="login()" class="login-btn">
+            ACCESS SYSTEM
+        </button>
+        <p id="deny" style="color: red; font-weight: bold; display: none;">Access Denied</p>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

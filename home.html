@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Fahim U | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="top-logo">
+        <picture>
+            <source media="(max-width: 1024px)" srcset="Logo%20mobile.png">
+            <img class="mdf" src="theme.png" alt="Mohamed Fahim U logo">
+        </picture>
+    </div>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <p id="nav-home" class="active"><a href="#home">HOME</a></p>
+        <p id="nav-about"><a href="#about">ABOUT</a></p>
+        <div class="nav-dropdown">
+            <p id="nav-skills"><a href="#skills">SKILLS</a></p>
+            <div class="dropdown-menu">
+                <p id="nav-certifications"><a href="#certifications">CERTIFICATIONS</a></p>
+            </div>
+        </div>
+        <p id="nav-projects"><a href="#projects">PROJECTS</a></p>
+        <p id="nav-contact"><a href="#contact">CONTACT</a></p>
+    </nav>
+
+    <main>
+        <section id="home" class="page-section">
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <img class="slide" src="slides.png" alt="">
+                    <img class="slide" src="slides.png" alt="">
+                    <img class="slide" src="slides.png" alt="">
+                </div>
+            </div>
+
+            <div class="div1">
+                <div class="subdiv1">
+                    <h1 style="color: rgb(2, 119, 162);" class="intro">MOHAMED FAHIM U</h1>
+                    <br>
+                    <h1 class="intro">B.Tech IT Student,</h1>
+                    <br>
+                    <h1 class="intro">Aspiring Web Developer,</h1>
+                    <br>
+                    <h1 class="intro">Cybersecurity Enthusiast,</h1>
+                    <br>
+                    <h1 class="intro">Consistent Learner,</h1>
+                    <br>
+                    <h1 class="intro">Story Writer.</h1>
+                    <br>
+                </div>
+
+                <div class="profile">
+                    <img class="pic" src="another.png" alt="">
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><hr><br><br><br><br><br>
+
+            <div class="resume">
+                <button onclick="window.open('Mohamed Fahim U (Resume).pdf', '_blank')">View Resume</button>
+                <br>
+                <a href="Mohamed Fahim U (Resume).pdf" download="Mohamed_Fahim_U_Resume.pdf">
+                    <button>Download Resume</button>
+                </a>
+            </div>
+
+            <div class="extradiv"></div>
+        </section>
+
+        <section id="about" class="page-section">
+            <div class="div2">
+                <div class="subdiv2">
+                    <p class="aboutxt"><span class="span" style="font-size: 70px;">Hi</span>, I'm Mohamed Fahim, a <span>B.Tech Information Technology</span> student at St. Joseph's Institute of Technology (2025-2029 batch). I am <span>Passionate</span> about technology and enjoy exploring different areas of <span>Computer Science.</span> I believe that Learning is a continuous process, and I am always eager to gain new knowledge and improve my skills.</p>
+                    <br>
+                    <p class="aboutxt">I have a strong interest in <span>Cybersecurity</span>, and am actively learning about operating systems, networking, Linux, and security concepts. I have completed <span>Certification</span> courses from platforms such as Cisco Networking Academy, IBM SkillsBuild, and Infosys Springboard to strengthen my understanding of technology and cybersecurity.</p>
+                    <br>
+                    <p class="aboutxt">Apart from cybersecurity, I enjoy Coding and <span>Web Development.</span> I have worked on projects using HTML, CSS, JavaScript, and Firebase, which have helped me understand how modern web applications are designed and developed. I also enjoy solving programming problems and improving my <span>Logical Thinking Skills.</span></p>
+                    <br>
+                    <p class="aboutxt">I have participated in <span>Internships, Hackathons, and Open-Source Projects</span> to gain practical experience and learn from real-world challenges. These experiences have helped me improve my <span>Teamwork, Communication, and Problem-Solving</span> abilities while working with different technologies.</p>
+                    <br>
+                    <p class="aboutxt">My goal is to continuously Learn, build useful projects, and develop the <span>Skills</span> required to become a successful technology professional. I am always excited to explore new <span>Opportunities,</span> take on <span>Challenges</span>, and grow both personally and professionally.</p>
+                </div>
+
+                <div class="cube-container">
+
+                    <div class="cube-scene">
+                        <div class="cube" id="cube">
+
+                            <div class="cube-face front" data-face="developer">
+                                <span>01</span>
+                                <h2>DEVELOPER</h2>
+                                <p>I BUILD THINGS</p>
+                            </div>
+
+                            <div class="cube-face back" data-face="creator">
+                                <span>02</span>
+                                <h2>CREATOR</h2>
+                                <p>I CREATE IDEAS</p>
+                            </div>
+
+                            <div class="cube-face right" data-face="learner">
+                                <span>03</span>
+                                <h2>LEARNER</h2>
+                                <p>I KEEP LEARNING</p>
+                            </div>
+
+                            <div class="cube-face left" data-face="writer">
+                                <span>04</span>
+                                <h2>WRITER</h2>
+                                <p>I WRITE STORIES</p>
+                            </div>
+
+                            <div class="cube-face top" data-face="contributor">
+                                <span>05</span>
+                                <h2>CONTRIBUTOR</h2>
+                                <p>I SHARE & BUILD</p>
+                            </div>
+
+                            <div class="cube-face bottom" data-face="innovator">
+                                <span>06</span>
+                                <h2>INNOVATOR</h2>
+                                <p>I THINK DIFFERENT</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cube-controls">
+                        <button onclick="rotateCube(-1)">&#10094;</button>
+                        <button onclick="resetCube()">RESET</button>
+                        <button onclick="rotateCube(1)">&#10095;</button>
+                    </div>
+
+                    <div class="cube-info">
+                        <h2 id="cube-title">DEVELOPER</h2>
+                        <p id="cube-description">
+                            Building meaningful projects through code and creativity.
+                        </p>
+                    </div>
+
+                    <p class="cube-hint">CLICK A FACE OR USE THE ARROWS TO EXPLORE</p>
+
+                </div>
+            </div>
+
+            <blockquote class="about-quote">"Hardest Choices Require Stronger Wills"</blockquote>
+
+            <br><br><br><br><br>
+            <hr>
+
+            <div class="study">
+                <h1 style="color: #00BFFF;">Achievements</h1>
+                <br>
+                <div style="padding: 20px;">
+                    <button id="addAchievementBtn" class="addbtn" style="display: none;" onclick="showAchievementPopup()">+ Add Achievement</button>
+                </div>
+                <br><br>
+                <div id="achievementsContainer"></div>
+            </div>
+
+            <div id="achievementPopup" class="popup">
+                <button class="xbtn" onclick="closeAchievementPopup()">X</button>
+                <p>Enter Achievement:</p>
+                <textarea id="achievementText" placeholder="Enter your achievement"></textarea>
+                <button id="addAchievementDoneBtn" style="margin-top: 20px;" class="btn" onclick="addAchievement()">Done</button>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <div class="study">
+                <h1 style="color: #00BFFF;">Experience</h1>
+                <br>
+                <div style="padding: 20px;">
+                    <button id="addExperienceBtn" class="addbtn" style="display: none;" onclick="showExperiencePopup()">+ Add Experience</button>
+                </div>
+                <br><br>
+                <div id="experienceContainer"></div>
+            </div>
+
+            <div id="experiencePopup" class="popup">
+                <button class="xbtn" onclick="closeExperiencePopup()">X</button>
+                <p>Enter Experience:</p>
+                <textarea id="experienceText" placeholder="Enter your experience"></textarea>
+                <button id="addExperienceDoneBtn" style="margin-top: 20px;" class="btn" onclick="addExperience()">Done</button>
+            </div>
+
+            <br><br>
+            <hr>
+
+            <div class="study">
+                <h1>Education</h1>
+                <br><br>
+                <img class="school" src="school.png" alt="">
+                <br>
+                <h2>MEASI Matriculation Higher Secondary School</h2>
+                <p>Mannady, Chennai - 600 001</p>
+                <br><br>
+                <img class="college" src="college.png" alt="">
+                <br>
+                <h2>St.Joseph's Institute of Technology</h2>
+                <p>OMR, Chennai - 600 119</p>
+                <br><br><br>
+            </div>
+        </section>
+
+        <section id="skills" class="page-section">
+            <div class="div3">
+                <div class="skills-header">
+                    <h1 class="skillstitle">Technical Skills</h1>
+                    <p class="skillssubtitle">Click the Arc Reactor to view the Skills</p>
+                </div>
+
+                <div class="arccontainer">
+                    <img onclick="skillsbox()" class="arc" src="arc.png" alt="">
+                </div>
+
+                <div id="skillset1" class="skillset1">
+                    <h2 class="section-title">PROFILE STATUS</h2>
+                    <div class="info-item">
+                        <span class="info-label">IDENTITY</span>
+                        <span class="info-value">Mohamed Fahim U</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">ROLE</span>
+                        <span class="info-value">B.Tech IT Student</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">STATUS</span>
+                        <span class="info-value online">ONLINE</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">SPECIALIZATION</span>
+                        <span class="info-value">Cybersecurity • Web Development</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">EXPERIENCE</span>
+                        <span class="info-value">Internships • Open Source • Projects</span>
+                    </div>
+                </div>
+
+                <div id="skillset2" class="skillset2">
+                    <h2 class="section-title">SYSTEM ANALYSIS</h2>
+                    <div class="info-item">
+                        <span class="info-label">SKILLS LOADED</span>
+                        <span class="info-value">10</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">PROJECTS</span>
+                        <span class="info-value">3</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CERTIFICATIONS</span>
+                        <span class="info-value">8</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CORE STACK</span>
+                        <span class="info-value">HTML • CSS • JavaScript • Node.js • MongoDB • Firebase</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">STATUS</span>
+                        <span class="info-value online">ALL SYSTEMS ONLINE</span>
+                    </div>
+                    <button class="certbtn" data-target="#certifications">VIEW CERTIFICATIONS</button>
+                </div>
+
+                <div id="skill" class="skill">
+                    <div class="skillbox consistency">Consistency</div>
+                    <div class="skillbox strategy">Strategy</div>
+                    <div class="skillbox problem-solving">Problem Solving</div>
+                    <div class="skillbox creativity">Creativity</div>
+                    <div class="skillbox teamwork">Teamwork</div>
+                    <div class="skillbox time-management">Time Management</div>
+                    <div class="skillbox research">Research</div>
+                    <div class="skillbox content-writing">Content Writing</div>
+                    <div class="skillbox coding">Coding</div>
+                    <div class="skillbox frontend">Frontend</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="page-section">
+            <div class="certdiv">
+                <div class="cert-header">
+                    <h1 class="cert-title">CERTIFICATION DATABASE</h1>
+                    <br>
+                    <button class="addcert" style="display: none;" onclick="document.getElementById('certFile').click()">+ ADD CERTIFICATE</button>
+                </div>
+
+                <input type="file" id="certFile" accept="image/*" style="display:none;" onchange="addCertificate()">
+                <div id="certificatesContainer"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section">
+            <div class="projects-header-wrap">
+                <h1 class="projects-heading">PROJECTS</h1>
+                <button id="btn" class="addbtn" style="display: none;" onclick="showpopup()">+ Add Project</button>
+            </div>
+
+            <div class="div4">
+                <div id="popup" class="popup">
+                    <button class="xbtn" onclick="closepopup()">X</button>
+                    <p>Enter Project Name:</p>
+                    <input id="projectName" type="text" placeholder="Project Name">
+                    <p>Enter Tech Stack:</p>
+                    <input id="techStack" type="text" placeholder="Tech Stack">
+                    <p>Enter Github Repo Link:</p>
+                    <input id="repoLink" type="text" placeholder="Repo Link">
+                    <p>Description:</p>
+                    <textarea id="description" placeholder="Describe your projects"></textarea>
+                    <button id="doneBtn" style="margin-top: 20px;" class="btn" onclick="addProject()">Done</button>
+                </div>
+
+                <div id="projectsContainer"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="div5">
+                <h1 class="contactxt">Feel Free to Connect</h1>
+
+                <div class="contact">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:mohdfahxm@gmail.com">mohdfahxm@gmail.com</a></p>
+
+                    <h3>📞 Mobile</h3>
+                    <p><a href="tel:+919043689766">+91 90436 89766</a></p>
+
+                    <h3>📍 Location</h3>
+                    <p>Muthu Naicken Street, Maskanchavadi, Chennai - 600 001</p>
+                    <p>Tamil Nadu, India</p>
+
+                    <h3>🤝 Collaboration</h3>
+                    <p>Open to Internships, Freelance Projects, Collaborations, and Entrepreneurship Opportunities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mohamed Fahim U. All Rights Reserved.</p>
+        <br>
+        <p>Code • Secure • Create</p>
+        <br>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/mohamed-fahim-82529736b/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.instagram.com/an_ordinary_person_18/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/919043689766" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61590617963067" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://github.com/mohamedfahim18" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
