@@ -191,16 +191,16 @@ const firebaseConfig = {
   measurementId: "G-QKL7C7HZ0G"
 };
 
-let secret = "";
+let sec = "";
 
 document.addEventListener("keydown", function(e){
 
-    secret += e.key.toLowerCase();
-    if(secret.includes("batman")){
+    sec += e.key.toLowerCase();
+    if(sec.includes("getElementById")){
         location.href = "login.html";
     }
 
-    if(secret.includes("terminate")){
+    if(sec.includes("terminate")){
         logout();
     }
 });
