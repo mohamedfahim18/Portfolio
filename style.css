@@ -1412,7 +1412,7 @@ span{
 
 .time-management  { top: calc(50% + 220px); left: calc(50% - 55px); }
 
-.research         { top: calc(50% + 150px); left: calc(50% - 129px - 55px); }
+.ui-ux         { top: calc(50% + 150px); left: calc(50% - 129px - 55px); }
 
 .content-writing  { top: calc(50% + 50px); left: calc(50% - 209px - 55px); }
 
@@ -2111,7 +2111,7 @@ span{
     .creativity       { top: calc(50% + 45px); left: calc(50% + 98px - 45px); }
     .teamwork         { top: calc(50% + 115px); left: calc(50% + 60px - 45px); }
     .time-management  { top: calc(50% + 170px); left: calc(50% - 45px); }
-    .research         { top: calc(50% + 115px); left: calc(50% - 60px - 45px); }
+    .ui-ux         { top: calc(50% + 115px); left: calc(50% - 60px - 45px); }
     .content-writing  { top: calc(50% + 45px); left: calc(50% - 98px - 45px); }
     .coding           { top: calc(50% - 35px); left: calc(50% - 98px - 45px); }
     .frontend         { top: calc(50% - 115px); left: calc(50% - 60px - 45px); }
@@ -2378,7 +2378,7 @@ span{
     .creativity       { top: calc(50% + 40px); left: calc(50% + 100px - 45px); }
     .teamwork         { top: calc(50% + 115px); left: calc(50% + 65px - 45px); }
     .time-management  { top: calc(50% + 165px); left: calc(50% - 45px); }
-    .research         { top: calc(50% + 115px); left: calc(50% - 65px - 45px); }
+    .ui-ux         { top: calc(50% + 115px); left: calc(50% - 65px - 45px); }
     .content-writing  { top: calc(50% + 40px); left: calc(50% - 100px - 45px); }
     .coding           { top: calc(50% - 40px); left: calc(50% - 100px - 45px); }
     .frontend         { top: calc(50% - 115px); left: calc(50% - 65px - 45px); }
